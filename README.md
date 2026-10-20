@@ -1,9 +1,13 @@
-# obs-zoom-to-mouse (OBS 32 compatible)
+# obs-zoom-to-mouse (OBS 32 修复版备份)
 
-个人备份 + OBS 32 兼容性修复版本。
+> **非官方版本，仅作个人备份用途。**
+>
+> - 原作者：**BlankSourceCode** — https://github.com/BlankSourceCode/obs-zoom-to-mouse
+> - 本仓库只做了一处改动：让脚本能在 OBS Studio 32 上正常加载。
+> - 脚本版权归原作者所有，本仓库不主张任何权利。
+> - 如果上游已发布修复版本，请优先使用官方版本。
 
-原项目：[BlankSourceCode/obs-zoom-to-mouse](https://github.com/BlankSourceCode/obs-zoom-to-mouse)
-（脚本版权归原作者所有，本仓库仅用于个人备份与问题反馈，非官方发行版。）
+本仓库存在的唯一目的：保存一份在 OBS 32 下可用的脚本副本，方便换电脑或日后重装时直接取用。
 
 ## 为什么有这个仓库
 
