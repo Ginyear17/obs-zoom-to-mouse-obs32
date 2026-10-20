@@ -5,6 +5,18 @@
 --
 
 local obs = obslua
+
+-- Compatibility shim for OBS 32+.
+-- OBS removed the deprecated obs_sceneitem_get_info / obs_sceneitem_set_info
+-- bindings from the Lua API; only the *_info2 variants remain. They operate on
+-- the same obs_transform_info structure, so we can alias them here.
+if obs.obs_sceneitem_get_info == nil and obs.obs_sceneitem_get_info2 ~= nil then
+    obs.obs_sceneitem_get_info = obs.obs_sceneitem_get_info2
+end
+if obs.obs_sceneitem_set_info == nil and obs.obs_sceneitem_set_info2 ~= nil then
+    obs.obs_sceneitem_set_info = obs.obs_sceneitem_set_info2
+end
+
 local ffi = require("ffi")
 local VERSION = "1.0"
 local CROP_FILTER_NAME = "obs-zoom-to-mouse-crop"
